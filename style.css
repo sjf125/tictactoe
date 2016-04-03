@@ -1,14 +1,67 @@
-.square{
-    width:100px;
-    height:100px;
+h1{
+  font-family: helvetica;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.v{
-    border-left:1px solid #000;
-    border-right:1px solid #000;
+h2{
+  margin: 0;
+  font-size: 13vw;
+  font-family:'Quicksand', sans-serif;
+  font-weight: 100;
 }
 
-.h{
-    border-top:1px solid #000;
-    border-bottom:1px solid #000;
+.top{
+  width: 50vw;
+  height: 15vw;
+  border-color: black;
+  border-style: solid;
+}
+
+.playerX{
+  float:left;
+  height: 100%;
+  width: 40%;
+}
+
+.playerO{
+  float: right;
+  height: 100%;
+  width: 40%;
+}
+
+.board{
+  width: 50vw;
+  height: 50vw;
+  min-width: 150px;
+  min-height: 150px;
+  border-style: solid;
+  border-color: black;
+  vertical-align: middle;
+}
+
+
+.cell{
+  float:left;
+  position: relative;
+  width: 31.33%;
+  padding-bottom : 31.33%; /* = width for a 1:1 aspect ratio */
+  margin: 1%;
+  background-color: #DCEDFD;
+  border-radius: 10px;
+  overflow: hidden;
+  border-color: purple;
+  /*border-style: solid;*/
+}
+
+.cell:hover{
+  background-color: white;
+  box-shadow: 0 0 1em yellow;
+}
+
+.mark{
+  position:absolute;
+  height:100%; /* = 100% - 2*5% padding */
+  width:100%; /* = 100% - 2*5% padding */
+  text-align: center;
 }
